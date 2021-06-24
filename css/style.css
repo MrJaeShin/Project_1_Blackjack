@@ -1,0 +1,31 @@
+#gameName {
+    background-color: #333;
+    margin: 0;
+    border: 0;
+    padding: 20px;
+}
+
+#table {
+    background-color: #136F63;
+    height: 500px;
+    font-size: large;
+    color: ivory;
+    text-decoration: brown;
+    text-align: center;
+
+}
+
+#play-buttons {
+    background-color: #3E2F5B;
+    text-align: center;
+    padding: 20px;
+}
+
+#play-buttons button {
+    font-size: x-large;
+    color: yellow;
+    border: solid red;
+    padding: 10px;
+    background-color: seagreen;
+    margin: auto 15px;
+}
