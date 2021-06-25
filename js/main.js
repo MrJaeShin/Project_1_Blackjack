@@ -19,20 +19,11 @@ function init() {
     dealerScore = 0;
     playerCards = [];
     dealerCards = [];
-    // table.innerText = "To Start: PRESS DEAL";
     dealButton.style.display = "inline";
     hitButton.style.display = "none";
     stayButton.style.display = "none";
     resetButton.style.display = "none";
 }
-
-// resetButton.style.display = "none";
-// hitButton.style.display = "none";
-// stayButton.style.display = "none";
-
-
-//____________________BUTTONS___________________
-
 
 dealButton.addEventListener("click", function() {
     gamesStarted = true;
@@ -72,7 +63,6 @@ resetButton.addEventListener("click", function() {
 });
 
 
-//____________________FUNCTIONS__________________
 function createDeck() {
     let deck = [];
     for (let suitIdx = 0; suitIdx < suits.length; suitIdx++) {
@@ -90,20 +80,13 @@ function createDeck() {
 let tableCards = document.querySelector("#table")
 
 function render() {
-    let dealerCardFace = [];//""//creat element span and span.innerHtml
+    let dealerCardFace = [];
     for (let i = 0; i < dealerCards.length; i++) {
-        // dealerCardFace += getCard(dealerCards[i]) + "\n";
         let dealtCard = getCard(dealerCards[i])
-        dealerCardFace.push(dealtCard);
-        let cardObj = document.createElement("span");
-        cardObj.classList.add(dealtCard);
-        tableCards.appendChild(cardObj);
-        console.log(tableCards)
-        console.log(cardObj)
     }
-    // console.log("DEALERCARDFACE:", dealerCardFace)
 
-    let playerCardFace = "";//create element span and span.innerHtml
+
+    let playerCardFace = [];
     for (let i = 0; i < playerCards.length; i++) {
         playerCardFace += getCard(playerCards[i]) + "\n";
     }
@@ -127,8 +110,6 @@ function render() {
     }
 }
 
-
-
 function shuffleCard(deck) {
     for (let i = 0; i < deck.length; i++) {
         let swapIdx = Math.trunc(Math.random() * deck.length);
@@ -138,20 +119,13 @@ function shuffleCard(deck) {
     }
 }
 
-
 function getCard(card) {
-    // return card.name + " of " + card.suit;
     return card.suit + card.name
 }
-
-// function getCardName(card) {
-//     return card.suit + card.name
-// }
 
 function getNextCard() {
     return deck.shift();
 }
-
 
 function getCardValue(card) {
     switch (card.name) {
@@ -167,7 +141,6 @@ function getCardValue(card) {
         default: return 10;
     }
 }
-
 
 function getScore(cardArray) {
     let score = 0;
@@ -185,12 +158,10 @@ function getScore(cardArray) {
     return score;
 }
 
-
 function updateScores() {
     dealerScore = getScore(dealerCards);
     playerScore = getScore(playerCards);
 }
-
 
 function getResult() {
     updateScores();
