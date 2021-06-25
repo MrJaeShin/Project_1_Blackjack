@@ -82,7 +82,7 @@ let tableCards = document.querySelector("#table")
 function render() {
     let dealerCardFace = [];
     for (let i = 0; i < dealerCards.length; i++) {
-        let dealtCard = getCard(dealerCards[i])
+        dealerCardFace += getCard(dealerCards[i]) + "\n";
     }
 
 
