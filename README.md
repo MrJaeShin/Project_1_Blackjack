@@ -1,11 +1,9 @@
 # Simplified Blackjack
 
-![Screenshot](Screenshot1.png)
-![Screenshot](Screenshot2.png)
-![Screenshot](Screenshot3.png)
-![Screenshot](Screenshot4.png)
-
-
+![Screenshot](/images/Screenshot1.png)
+![Screenshot](/images/Screenshot2.png)
+![Screenshot](/images/Screenshot3.png)
+![Screenshot](/images/Screenshot4.png)
 
 
 ## Technologies Used :
