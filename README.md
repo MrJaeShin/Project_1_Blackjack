@@ -13,7 +13,7 @@ This game uses Javascript, CSS and HTML. HTML is used to create the skeleton of 
 
 ## Rules for my version of Blackjack : 
 
-Play it here! ==> [GAME]()
+Play it here! ==> [GAME](https://mrjaeshin.github.io/Project_1_Blackjack/)
 
 Blackjack is a card game where players play against a dealer. The cards are worth face value, except Aces and face cards (J, Q, K). Aces are 1 or 11, and face cards are each worth 10. The player's goal is to get the sum of their cards higher than the sum of the dealer's cards, without going over 21. Going over 21 for both player and dealer will result in "bust."
 
